@@ -4,7 +4,9 @@
   "description": "Hover tooltip for React + MobX applications",
   "main": "dist/index.ts",
   "scripts": {
-    "build": "rm -rf dist && npx tsc",
+    "build:styles": "npx sass styles/sass/tooltip.sass styles/css/tooltip.css",
+    "build:dist": "rm -rf dist && npx tsc",
+    "build": "npm run build:dist && npm run build:styles",
     "publish:patch": "npm run build && npm version patch && npm run pub_n_go",
     "publish:minor": "npm run build && npm version minor && npm run pub_n_go",
     "publish:major": "npm run build && npm version major && npm run pub_n_go",
@@ -36,9 +38,10 @@
     "mobx-react": "^7.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "sass": "^1.56.0",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.1.0",
-    "typescript": "^4.8.4"
+    "typescript": "4.7.3"
   },
   "peerDependencies": {
     "mobx": ">=6",
