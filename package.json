@@ -1,0 +1,49 @@
+{
+  "name": "@sounds.of.limbo/tooltip",
+  "version": "0.0.1",
+  "description": "Hover tooltip for React + MobX applications",
+  "main": "dist/index.ts",
+  "scripts": {
+    "build": "rm -rf dist && npx tsc",
+    "publish:patch": "npm run build && npm version patch && npm run pub_n_go",
+    "publish:minor": "npm run build && npm version minor && npm run pub_n_go",
+    "publish:major": "npm run build && npm version major && npm run pub_n_go",
+    "pub_n_go": "npm publish --access public && git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sounds-of-limbo/tooltip.git"
+  },
+  "keywords": [
+    "react",
+    "mobx",
+    "tooltip",
+    "hover",
+    "custom",
+    "title"
+  ],
+  "author": "Limbo Sounds",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sounds-of-limbo/tooltip/issues"
+  },
+  "homepage": "https://github.com/sounds-of-limbo/tooltip#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "mobx": "^6.6.2",
+    "mobx-react": "^7.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.0",
+    "typescript": "^4.8.4"
+  },
+  "peerDependencies": {
+    "mobx": ">=6",
+    "mobx-react": ">=7",
+    "react": ">=16",
+    "react-dom": ">=16"
+  }
+}
