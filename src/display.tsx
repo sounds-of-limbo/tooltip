@@ -109,7 +109,7 @@ extends React.PureComponent<{}, { isShifted: boolean }> {
 					maxWidth: 320,
 					transform: `translate(${x + 10}px, ${y + 10}px) translateX(${isShifted ? "calc(-100% - 30px)" : "0"}) translateZ(0)`,
 				}}
-				className={`sol__tooltip fade-${isFadedOut ? "out" : "in"}`}
+				className={`sol__tooltip sol__tt-fade-${isFadedOut ? "out" : "in"}`}
 				onAnimationEnd={this.handleAnimationEnd}
 			>
 				{content}
