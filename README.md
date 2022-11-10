@@ -1,6 +1,10 @@
 # @sounds.of.limbo/tooltip
 Customizable hover tooltip for React applications
 
+[![https://nodei.co/npm/@sounds.of.limbo/tooltip.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/@sounds.of.limbo/tooltip.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/@sounds.of.limbo/tooltip)
+
+[![npm version](https://badge.fury.io/js/@sounds.of.limbo%2Ftooltip.svg)](https://badge.fury.io/js/@sounds.of.limbo%2Ftooltip)
+
 ## Table of Contents
 1. [Overview](#overview)
 2. [Preparations](#preparations)
