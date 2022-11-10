@@ -27,7 +27,7 @@ var __assign = (this && this.__assign) || function () {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TooltipElement = void 0;
-var react_1 = require("react");
+var React = require("react");
 var store_1 = require("./store");
 var display_1 = require("./display");
 var TooltipElement = /** @class */ (function (_super) {
@@ -61,13 +61,13 @@ var TooltipElement = /** @class */ (function (_super) {
     TooltipElement.prototype.render = function () {
         var _a = this.props, element = _a.element, _b = _a.elementProps, elementProps = _b === void 0 ? {} : _b;
         var Element = element;
-        return react_1.default.createElement(react_1.default.Fragment, null,
-            react_1.default.createElement(Element, __assign({}, elementProps, { onMouseEnter: this.handleMouseEnter, onMouseLeave: this.handleMouseLeave }), this.props.children));
+        return React.createElement(React.Fragment, null,
+            React.createElement(Element, __assign({}, elementProps, { onMouseEnter: this.handleMouseEnter, onMouseLeave: this.handleMouseLeave }), this.props.children));
     };
     TooltipElement.defaultProps = {
         element: "div",
     };
     return TooltipElement;
-}(react_1.default.PureComponent));
+}(React.PureComponent));
 exports.TooltipElement = TooltipElement;
 //# sourceMappingURL=element.js.map

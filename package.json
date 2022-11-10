@@ -6,7 +6,7 @@
   "scripts": {
     "build:styles": "npx sass styles/sass/tooltip.sass styles/css/tooltip.css",
     "build:dist": "rm -rf dist && npx tsc",
-    "build": "npm run build:dist && npm run build:styles",
+    "build": "npm run build:dist && npm run build:styles && git add . && git commit -m 'new build'",
     "publish:patch": "npm run build && npm version patch && npm run pub_n_go",
     "publish:minor": "npm run build && npm version minor && npm run pub_n_go",
     "publish:major": "npm run build && npm version major && npm run pub_n_go",

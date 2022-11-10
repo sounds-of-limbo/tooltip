@@ -22,7 +22,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TooltipDisplay = void 0;
-var react_1 = require("react");
+var React = require("react");
 var mobx_react_1 = require("mobx-react");
 var store_1 = require("./store");
 var TooltipDisplay = /** @class */ (function (_super) {
@@ -42,8 +42,8 @@ var TooltipDisplay = /** @class */ (function (_super) {
     };
     TooltipDisplay.prototype.render = function () {
         var isDisplayed = store_1.store.isDisplayed;
-        return react_1.default.createElement(react_1.default.Fragment, null,
-            react_1.default.createElement("div", { style: {
+        return React.createElement(React.Fragment, null,
+            React.createElement("div", { style: {
                     position: "absolute",
                     top: 0,
                     left: 0,
@@ -53,20 +53,20 @@ var TooltipDisplay = /** @class */ (function (_super) {
                     pointerEvents: "none",
                     overflow: "hidden",
                 } },
-                react_1.default.createElement("div", { style: {
+                React.createElement("div", { style: {
                         position: "absolute",
                         top: 0,
                         left: 0,
                         right: "-100%",
                         bottom: "-100%",
-                    } }, isDisplayed && react_1.default.createElement(TooltipContent, null))));
+                    } }, isDisplayed && React.createElement(TooltipContent, null))));
     };
     TooltipDisplay.fadeOutAnimationName = undefined;
     TooltipDisplay = __decorate([
         mobx_react_1.observer
     ], TooltipDisplay);
     return TooltipDisplay;
-}(react_1.default.PureComponent));
+}(React.PureComponent));
 exports.TooltipDisplay = TooltipDisplay;
 var TooltipContent = /** @class */ (function (_super) {
     __extends(TooltipContent, _super);
@@ -98,8 +98,8 @@ var TooltipContent = /** @class */ (function (_super) {
         var isFadedOut = store_1.store.isFadedOut, position = store_1.store.position, content = store_1.store.content;
         var x = position.x, y = position.y;
         var isShifted = this.state.isShifted;
-        return react_1.default.createElement(react_1.default.Fragment, null,
-            react_1.default.createElement("div", { ref: function (r) { return _this.div = r; }, style: {
+        return React.createElement(React.Fragment, null,
+            React.createElement("div", { ref: function (r) { return _this.div = r; }, style: {
                     position: "fixed",
                     top: 0,
                     left: 0,
@@ -111,5 +111,5 @@ var TooltipContent = /** @class */ (function (_super) {
         mobx_react_1.observer
     ], TooltipContent);
     return TooltipContent;
-}(react_1.default.PureComponent));
+}(React.PureComponent));
 //# sourceMappingURL=display.js.map
