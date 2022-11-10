@@ -105,7 +105,7 @@ var TooltipContent = /** @class */ (function (_super) {
                     left: 0,
                     maxWidth: 320,
                     transform: "translate(".concat(x + 10, "px, ").concat(y + 10, "px) translateX(").concat(isShifted ? "calc(-100% - 30px)" : "0", ") translateZ(0)"),
-                }, className: "sol__tooltip fade-".concat(isFadedOut ? "out" : "in"), onAnimationEnd: this.handleAnimationEnd }, content));
+                }, className: "sol__tooltip sol__tt-fade-".concat(isFadedOut ? "out" : "in"), onAnimationEnd: this.handleAnimationEnd }, content));
     };
     TooltipContent = __decorate([
         mobx_react_1.observer
