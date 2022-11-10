@@ -1,6 +1,6 @@
 {
   "name": "@sounds.of.limbo/tooltip",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Hover tooltip for React + MobX applications",
   "main": "dist/index.js",
   "scripts": {
