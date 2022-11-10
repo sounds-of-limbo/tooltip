@@ -2,7 +2,7 @@
   "name": "@sounds.of.limbo/tooltip",
   "version": "0.0.1",
   "description": "Hover tooltip for React + MobX applications",
-  "main": "dist/index.ts",
+  "main": "dist/index.js",
   "scripts": {
     "build:styles": "npx sass styles/sass/tooltip.sass styles/css/tooltip.css",
     "build:dist": "rm -rf dist && npx tsc",
