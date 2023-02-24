@@ -7,7 +7,7 @@ interface TooltipProps<E extends keyof HTMLElementTagNameMap = keyof HTMLElement
 	element?: E
 	elementProps?: React.HTMLAttributes<HTMLElementTagNameMap[E]>
 	content?: React.ReactNode
-	children: React.ReactNode
+	children?: React.ReactNode
 }
 
 export
