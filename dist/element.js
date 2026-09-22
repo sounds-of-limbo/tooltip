@@ -25,6 +25,31 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
+var __read = (this && this.__read) || function (o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+};
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TooltipElement = void 0;
 var React = require("react");
@@ -33,7 +58,7 @@ var display_1 = require("./display");
 var TooltipElement = /** @class */ (function (_super) {
     __extends(TooltipElement, _super);
     function TooltipElement() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super.apply(this, __spreadArray([], __read(arguments), false)) || this;
         _this.fadeOut = function () {
             var fadeOutAnimationName = display_1.TooltipDisplay.fadeOutAnimationName;
             if (typeof fadeOutAnimationName == "undefined")

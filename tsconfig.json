@@ -15,7 +15,7 @@
 		"downlevelIteration": true,
 		"sourceMap": true,
 		"types": ["node"],
-		"lib": ["ES6", "DOM", "DOM.Iterable"],
+		"lib": ["ES6", "ESNext", "DOM", "DOM.Iterable"],
 		"jsx": "react",
 		"typeRoots": [
 			"./node_modules/@types"

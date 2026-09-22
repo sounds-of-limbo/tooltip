@@ -20,6 +20,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __read = (this && this.__read) || function (o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+};
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TooltipDisplay = void 0;
 var React = require("react");
@@ -28,7 +53,7 @@ var store_1 = require("./store");
 var TooltipDisplay = /** @class */ (function (_super) {
     __extends(TooltipDisplay, _super);
     function TooltipDisplay() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super.apply(this, __spreadArray([], __read(arguments), false)) || this;
         _this.handleMouseMove = function (event) {
             store_1.store.setPosition(event.x, event.y);
         };
@@ -71,7 +96,7 @@ exports.TooltipDisplay = TooltipDisplay;
 var TooltipContent = /** @class */ (function (_super) {
     __extends(TooltipContent, _super);
     function TooltipContent() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super.apply(this, __spreadArray([], __read(arguments), false)) || this;
         _this.state = {
             isShifted: false
         };
